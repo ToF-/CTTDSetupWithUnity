@@ -9,7 +9,7 @@ UNITY_ROOT=unity
 
 TARGET=test.out
 
-SRC_FILES=$(UNITY_ROOT)/src/unity.c $(UNITY_ROOT)/extras/fixture/src/unity_fixture.c  test/my_tests.c test/test_runner.c test/all_tests.c src/my_code.c
+SRC_FILES=$(UNITY_ROOT)/src/unity.c $(UNITY_ROOT)/extras/memory/src/unity_memory.c $(UNITY_ROOT)/extras/fixture/src/unity_fixture.c  test/my_tests.c test/test_runner.c test/all_tests.c src/my_code.c
 
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src -I$(UNITY_ROOT)/extras/memory/src
 
