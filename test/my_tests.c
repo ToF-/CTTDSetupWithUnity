@@ -8,12 +8,12 @@ TEST_GROUP(my_code);
 int *an_int;
 
 TEST_SETUP(my_code) {
-    UnityMalloc_StartTest();
+    UnityMalloc_StartTest(); // see unity/extras/memory/readme.md
     an_int = (int *)malloc(sizeof(int));
 }
 
 TEST_TEAR_DOWN(my_code) {
-    free(an_int);
+    free(an_int); // commenting this => test fails with : this test leaks
     UnityMalloc_EndTest();
 }
 
